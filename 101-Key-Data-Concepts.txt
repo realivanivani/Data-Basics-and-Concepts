@@ -1,0 +1,1154 @@
+This is a transcript of the Youtube video:
+A Data Crash Course | 100+ Key Data Concepts
+from Shashank Kalanithi. The link: https://www.youtube.com/watch?v=56INeYrTiyE
+
+data you might not know why it's 
+important but you know it is whether 
+it's your boss telling you to be more 
+data-driven or your professor's telling 
+you that data is the new black gold data 
+is the center of everything we do today 
+here's 101 terms in 30 minutes to give 
+you an overview of the data world from 
+data science to data analytics data 
+engineering remember to like comment to 
+subscribe if you find this useful let's 
+start by defining data in data science 
+data refers to any information that can 
+be represented in the form of numbers 
+and therefore understood by computers 
+this includes actual numbers text photos 
+sounds and many other forms of data when 
+a computer stores data it needs to be 
+structured in some way when you can 
+structure your data in the form of a 
+two-dimensional table it's called 
+structured data think about something 
+that can fit in a microsoft excel sheet 
+csvs are a common way of storing 
+structured data it stands for comma 
+separated values when you open one in 
+your computer it'll typically open in 
+microsoft excel or another 
+spreadsheeting program if you 
+right-click and open it in a text editor 
+then you'll see that each value is 
+separated by a comma and each line is 
+separated by something we'd call a line 
+break semi-structured data is data that 
+is stored in a tagged hierarchical 
+format that doesn't easily fit into a 
+tabular or structured format json is a 
+common way of storing semi-structured 
+data it stands for javascript object 
+notation and stores values in a key 
+value structure this format allows you 
+to store complicated data like data 
+which has multiple values per key or 
+data which needs to be stored in some 
+kind of hierarchical format unstructured 
+data is data that can't be easily 
+represented in a structured or 
+semi-structured format this can include 
+things like photo audio or social media 
+posts as the tools to analyze data get 
+better and more advanced the ability to 
+analyze unstructured data is becoming a 
+more important part of a data 
+professional's toolkit let's say you 
+want to break into the world of data 
+what can you do 
+there are many careers in the world of 
+data one of the most in-demand and 
+lucrative being a data engineer a data 
+engineer is a conductor that ensures 
+that data from many different sources 
+comes together gracefully in a symphony 
+that is clean error free and 
+computationally efficient to get an idea 
+of how much data is created and why we 
+need specialized professionals to manage 
+it let's take the example of the nfl 
+america's gridiron football league 
+when a fan buys a ticket they generate a 
+record with information like the seat 
+number time the ticket was bought etc 
+when they go to the game parking bot the 
+time the ticket was scanned in the 
+number of concessions bought apparel bot 
+and maybe even facial tracking are all 
+data points that are collected there are 
+probably hundreds of megabytes of data 
+generated per person daily at major 
+events when multiplied by the hundreds 
+of thousands of people attending you can 
+start to see how managing all this data 
+requires people with specialized skills 
+and managing large amounts of data 
+across a series of disconnected systems 
+at their core data engineers ensure that 
+this data is efficiently brought 
+together for data scientists and data 
+analysts to analyze now as some of you 
+may know i recently transitioned from a 
+role as a senior data analyst into a 
+role as a senior data engineer and the 
+transition has been very interesting 
+especially because the skills between 
+data analysts and data engineers differ 
+quite a bit but that transition has been 
+made easier by this week's sponsor 
+project pro.io 
+project pro.io is the premier source to 
+get fully done end-to-end projects on 
+any subject in data that you are 
+interested in i always like to say that 
+the best way to prepare for a job is to 
+start doing it before you're actually 
+doing it and project pro.io has projects 
+just for you end-to-end projects for 
+data analysts data scientists or data 
+engineers or if you're a professional 
+working in the field they will teach you 
+and they have recipes that will show you 
+how to actually do real-life tasks from 
+end-to-end using real-life tools 
+everything from data bricks to snowflake 
+to aws to gcp whether you're a seasoned 
+professional looking for some recipes 
+for an actual problem you're trying to 
+solve at work or you're a student or 
+someone else looking to break into the 
+industry and looking for something for 
+your portfolio project pro dot io has 
+projects for data scientists data 
+engineers and data analysts they've been 
+a great sponsor of this channel and i've 
+loved working with them over the past 
+couple of months support this channel by 
+supporting our sponsors project i o 
+check out the link in the description 
+below all the data you created at the 
+football game it has to be stored 
+somewhere databases are the computer 
+systems that corporations use to store 
+organized data in all formats the most 
+popular form of database is probably the 
+relational database which is controlled 
+by something called a relational 
+database management system for the most 
+part a relational database only stores 
+structured data and separates its data 
+into tables which are related to one 
+another through the columns one of the 
+most useful aspects of relational 
+databases and the reason they're 
+probably the most popular database 
+format in the world is that they are 
+often acid compliant meaning that 
+transactions within the database are 
+atomic consistent isolated and durable 
+atomic meaning each transaction read and 
+write is treated as a separate unit 
+either the entire transaction is 
+executed or it isn't this protects 
+against data loss and corruption either 
+the transaction succeeded or it doesn't 
+consistent transactions are made in 
+predefined and predictable ways if 
+something in your data is corrupted 
+unintended errors in your table won't 
+occur isolated multiple users reading 
+and writing simultaneously will have 
+their transactions isolated from one 
+another ensuring concurrent transactions 
+can happen without interference and 
+durable even if the system fails 
+transactions will be saved if you need 
+to store important data like customer 
+balances because you're a bank a 
+relational database helps ensure data 
+integrity because of its acid compliance 
+another great aspect of relational 
+databases is the prevalence of sql or 
+sql a querying language that's easy to 
+learn difficult to read and impossible 
+to master this is how data professionals 
+oftentimes interact with databases and 
+is a core skill for anyone who wants to 
+break into the world of data science i 
+have a one hour tutorial on sql if you 
+want to get started usually when you 
+have a table in sql you don't need all 
+of the data in that table at the same 
+time when you want to limit the amount 
+of data you're bringing in you can use 
+the select statement to limit the number 
+of columns that you bring in from a full 
+table or you can use the where statement 
+to limit the number of rows you're going 
+to bring in based on some condition or a 
+series of conditions after you filter 
+down your data you might want to 
+aggregate said data aggregating data is 
+all about taking a certain number of 
+rows and combining the data in such a 
+way that you end up with less data than 
+before one common way to aggregate data 
+is to sum or average it depending on 
+your rdbms you can have dozens of other 
+ways to aggregate your data a common 
+issue is that the data you need is 
+separated into multiple tables there are 
+two main ways to combine data from 
+multiple tables unions and joins a union 
+refers to joining tables vertically or 
+basically stacking tables on top of one 
+another a join refers to combining 
+tables horizontally by matching values 
+in common columns from both tables while 
+relational databases are great if your 
+data comes in formats that are tabular 
+if you have semi-structured or 
+unstructured data you'll want to store 
+it in a nosql database this refers to a 
+group of database paradigms that rose 
+out of the need for internet companies 
+like youtube and facebook to store 
+massive amounts of data in a relatively 
+cheap way nosql databases are usually 
+not acid compliant but can scale to 
+handle massive amounts of traffic better 
+than many sql databases can mongodb is 
+probably the most common nosql database 
+out there although there are many others 
+like amazon's dynamodb or microsoft's 
+cosmos db so far we've talked about the 
+software management of databases but 
+also important is the physical computer 
+a database is on databases are stored 
+and processed on servers which are 
+basically computers that are designed to 
+handle massive amounts of traffic back 
+in the stone age you would have to buy 
+power and manage these servers yourself 
+if you were a large company these 
+databases were considered on-premise or 
+on-prem databases in data professions 
+you'll often hear about a database being 
+on-prem or needing to move data from 
+on-prem if you're moving data from 
+on-prem you're usually moving it to the 
+cloud cloud services are a group of 
+services managed by a large company who 
+takes care of everything from buying and 
+powering the servers to managing 
+physical security 
+to adding and subtracting server power 
+based on how much traffic you have when 
+using cloud outside of china the big 
+players are amazon web services better 
+known as aws microsoft azure and google 
+cloud platform otherwise known as gcp 
+aws started off in the early 2000s and 
+is the current market leader with azure 
+behind it and gcp behind azure if you're 
+in china and somehow are able to watch 
+this video then alibaba cloud tencent 
+cloud and huawei cloud are some of the 
+biggest players modern clouds have been 
+a breeding ground for companies who base 
+their entire existence on the major 
+cloud services snowflake is probably the 
+most famous of these companies and built 
+their entire data warehouse tool on top 
+of aws a data warehouse is just a 
+database that companies store and 
+organize large amounts of data away from 
+their production systems or systems that 
+actually run business processes so that 
+it can be analyzed by data professionals 
+a store for example will have a data 
+warehouse like snowflake which has a 
+copy of all the customer transactions 
+data for analysis separate of the actual 
+data which is used to run business 
+operations additionally data warehouses 
+usually have the ability to run 
+extremely complicated transactions and 
+calculations which makes them perfect 
+for analytical purposes if you work in 
+data today you'll inevitably run into 
+big data big data is a bit of an 
+amorphous term and if you post anything 
+about big data onto a website frequented 
+by tech professionals you'll constantly 
+be told that you're not actually working 
+with big data ignoring the haters big 
+data has three main parts to it high 
+volume high velocity and high variety 
+big data emerged out of the exponential 
+increase in computational systems over 
+the past few decades between all the 
+interactions that computers have with 
+each other petabytes of data are created 
+constantly before we talk about how we 
+solve the problems of dealing with big 
+data we must first talk about vertical 
+versus horizontal scaling let's say you 
+need to store and process a bunch of 
+data you'll need two things 
+computational power or compute and 
+storage space you could vertically scale 
+your system which means you buy a more 
+capable system with more storage and a 
+stronger processor at the individual 
+level this works relatively well when 
+you need to process more data on your 
+laptop you buy a more expensive laptop 
+this method does not scale very well for 
+large operations though instead it's 
+cheaper to just buy more cheaper systems 
+usually called commodity hardware and 
+write software that distributes the 
+files and computational needs across 
+multiple computers this is called 
+horizontally scaling and is basically 
+how we deal with all big data problems 
+going through each of the aspects of big 
+data one by one let's talk about how we 
+deal with the massive volume of data 
+today one of the most common ways of 
+storing massive amounts of data is to 
+use something called optic storage 
+object storage is a form of storage that 
+allows you to just dump a file into a 
+section off part of a disk and then 
+gives that file a key which you can use 
+to retrieve it later this allows us to 
+create massive data lakes which can 
+store insane amounts of data relatively 
+cheaply to deal with the insane data 
+volume of the modern world back before 
+the era of big data the velocity at 
+which we had to move data didn't need to 
+be that fast except for the most 
+advanced use cases this led companies to 
+process data in batches maybe once a day 
+or once a week this allowed them to run 
+data processes when fewer people would 
+use systems and overall requires simpler 
+data infrastructure to set up one modern 
+example of batch data processing is the 
+ach system that direct deposits your 
+paycheck into your bank account as the 
+use cases of data and the volume of data 
+grew so did the justification for 
+ingesting data in real time let's say 
+you want to dynamically offer deals to 
+customers based on their behavior in 
+your app you could have the app have 
+rules that trigger whenever the customer 
+does something this works but isn't very 
+dynamic let's say you want to 
+dynamically offer a deal to the customer 
+based on what they do in an app we'll 
+need to stream in the data from millions 
+of users we have to our systems using a 
+streaming data pipeline process it and 
+then port the result back to the user 
+streaming data processing also allows 
+for real-time analytics one common 
+framework used to deal with streaming 
+data is the apache kafka framework 
+created by linkedin when you have a 
+large variety of data coming in from 
+different systems that has to go to 
+another large variety of systems the 
+number of connections that you have to 
+make scales too fast for you to manage 
+them this is where kafka comes in kafka 
+is a high throughput messaging system 
+that takes in all of the data from your 
+input systems and coordinates their 
+transportation to the output systems a 
+great example of kafka's use in the real 
+world is how netflix uses it to 
+recommend shows to you in real time 
+after we have somewhere to store our 
+data and stream it we'll need the 
+ability to process a large variety of 
+said data dealing with the massive 
+velocity of data requires more 
+interesting solutions dealing with this 
+massive amount of data requires a big 
+data framework that can horizontally 
+scale the computational power available 
+to us and intelligently distribute the 
+load across these systems apache hadoop 
+inspired by work at google was one of 
+the first extremely popular frameworks 
+to do this it allows for the processing 
+of massive amounts of data using 
+distributed computing meaning it will 
+distribute the computations across many 
+different computers and coordinate the 
+results to come up with a solution 
+that's similar to if one computer did 
+everything by itself apache spark 
+developed in berkeley came out eight 
+years later and did basically the same 
+thing but was designed to counteract the 
+deficiencies of hadoop and tended to be 
+faster because it would use ram to store 
+intermediate operations instead of disk 
+space like hadoop this also means it can 
+be more expensive to run you're probably 
+not wondering why all these tools have 
+apache at the beginning of them and what 
+apache is is it some super data company 
+that's creating all these industry 
+standard tools not quite it's an open 
+source community of volunteers who 
+manage a lot of the software tools that 
+undergird modern technological 
+infrastructure oftentimes people who 
+create software that has a lot of 
+generalized use cases will turn over the 
+software to the apache foundation which 
+will then apply the apache license to it 
+which allows the software to be used and 
+modified for just about any purpose now 
+the question is what is open source 
+software open source software is 
+software that can be freely used or 
+modified for basically any purpose 
+including commercial open source 
+software has become such a common 
+paradigm for releasing software that 
+major tech companies like google and 
+facebook are constantly releasing 
+incredibly complicated data tools for 
+free this essentially allows them to 
+kick innovation on certain projects into 
+high gear and has been a very core part 
+of tech culture since the turn of the 
+century even microsoft went from openly 
+bashing linux 
+to being one of the biggest contributors 
+to open source projects over the last 
+two decades pivoting from data engineers 
+another profession in the world of data 
+is the data scientist data scientists 
+often focus on the complicated problems 
+a company might have that can be solved 
+with deep and computationally or 
+mathematically intensive analysis of 
+data 
+oftentimes a data scientist will work on 
+a very complicated problem where data is 
+not easily available for over the course 
+of multiple weeks or months and use 
+tools from coding to mathematics to try 
+and estimate an answer for a previously 
+unanswerable question one of the most 
+important tools in the tool belt of the 
+data scientist is the ability to program 
+the languages of choice for most data 
+scientists are r and python python is a 
+general purpose programming language 
+that is valued for its clean syntax very 
+robust selection of add-ons also called 
+libraries and its open source nature r 
+is the other popular programming 
+language for data scientists it's very 
+popular amongst people with very strong 
+academic backgrounds or people who have 
+had the misfortune of suffering through 
+sas matlab or stata if you are starting 
+from scratch i recommend that you learn 
+python instead of r because more jobs 
+are available to python programmers an 
+ancient art form discovered by software 
+engineers eons ago but still not widely 
+adopted by the data community in all 
+seriousness version control is a system 
+that allows people who write code to 
+have multiple versions of it which can 
+be tested automatically for bugs prior 
+to launching it helps large teams work 
+together in an error-free and integrated 
+manner github and gitlab are probably 
+the biggest names in the world of 
+version control software version control 
+only works if you have code written 
+first while software engineers write 
+code on blank canvases data scientists 
+will oftentimes use code sectioned off 
+into blocks for python users this is a 
+jupyter notebook for our users this is 
+the r markdown file these file formats 
+allow you to write and run code 
+iteratively and work well for data 
+scientists as the work of analyzing data 
+is an extremely iterative process when 
+working on a data science project in 
+python or r you'll almost always need 
+access to extra software in the form of 
+software libraries these libraries are 
+installed using a package manager like 
+pip for python or cran for r there are 
+even specialized package managers that 
+are used for data science one of the 
+most popular packages that you will work 
+with as a data scientist is the numpy 
+package you might have heard that python 
+is considered a slow language one way to 
+fix this is the solution that numpy has 
+pursued which is to pre-compile c code 
+in a nice clean python wrapper 
+essentially this means that you're 
+writing in python but executing c numpy 
+is a library that allows us to perform 
+all kinds of array operations that are 
+necessary to perform data science 
+quickly an array is just a collection of 
+objects generally of the same type data 
+frames are a commonly used feature for 
+data scientists and basically the 
+programming equivalent of tabular data 
+data frames can have multiple indices 
+that can be layered in pretty 
+interesting ways the library that adds 
+dataframe functionality to python is 
+pandas which is short for panel data 
+like a lot of stuff in the world of data 
+science pandas is an invention of the 
+financial industry it allows you to 
+import read clean analyze and export 
+data using a very simple set of commands 
+pandas is a starting point for a lot of 
+data science projects as the data 
+scientist tries to get an understanding 
+of their data scipy is a fun library 
+that has lots of features that are 
+useful for scientific computing it can 
+help solve optimization problems linear 
+algebra integration and interpolation if 
+you don't understand what any of this 
+means don't worry i barely do too if 
+you're wondering why i haven't mentioned 
+the equivalent packages in r it's 
+because they're all conveniently 
+combined into a single library called 
+the tidy verse after you learn your 
+basic analyses as a data scientist you 
+might want to create some machine 
+learning algorithms to that end 
+scikit-learn has become the standard 
+library in python to accomplish this if 
+you've heard about data science then 
+you've heard about machine learning as 
+well from email spam filters to speech 
+recognition to that robot that beat that 
+guy at that game i used to watch an 
+anime about machine learning as a field 
+has exploded in use over the last 15 
+years it is a field dedicated to 
+programming machines to teach themselves 
+how to become better at a task after 
+learning with some data although jumping 
+straight into machine learning sounds 
+like an excellent idea the best data 
+scientists oftentimes have a method to 
+their madness and will tackle problems 
+procedurally one such procedure is crisp 
+dm or the cross industry standard 
+process for data mining it was created 
+by ibm in the 90s back when data science 
+was still called data mining but still 
+holds up quite well as a framework to 
+tackle many data science problems the 
+first step is to gain a business 
+understanding which is essentially an 
+understanding of the requirements of the 
+analysis you need to conduct what are 
+you trying to accomplish data 
+understanding comes right after and is 
+about understanding if you have the data 
+necessary to deliver on the requirements 
+of the business if not then you need to 
+go back to the business requirements and 
+either simplify the goal or find a way 
+to acquire necessary data one important 
+way to understand the data you're 
+working with is to perform eda or 
+exploratory data analysis this usually 
+means taking statistics of your data 
+checking if there are any missing values 
+and overall measuring the data 
+quantitatively and qualitatively to 
+fully understand it and if it will help 
+you solve your business question after 
+an agreement on a realistic business 
+goal and its associated data has been 
+reached you'll go to the data 
+pre-processing step data science follows 
+the philosophy of gigo garbage and 
+garbage out if the data you use in your 
+models is bad or dirty i.e they have 
+missing values they aren't accurate they 
+don't represent the population that you 
+want to analyze you'll spend all your 
+time building machine learning models or 
+analyzing data that won't yield anything 
+useful to achieve your business goals 
+this step is oftentimes the most time 
+consuming one but where you'll really 
+appreciate taking your time as it will 
+save you heartache further down in 
+cleaning this data you'll have access to 
+a lot of data if we think of our data in 
+a tabular format each row refers to an 
+instance of the data each column refers 
+to a feature of the data imputation is a 
+data pre-processing technique where we 
+try and estimate the value of missing 
+values in our data through the data 
+surrounding the most common methods 
+involve just replacing the data with our 
+mean or median of the feature more 
+advanced methods of imputation involve 
+training machine learning algorithms to 
+predict what each missing value should 
+be mlception style machine learning 
+algorithms like the computers that power 
+them can only truly understand numbers 
+what do you do when you have data that 
+doesn't consist just numbers encoding is 
+a step you'll have to perform to turn 
+categorical data into numerical data 
+usually by mapping it to some number the 
+whole point of data pre-processing is to 
+make your data work better with machine 
+learning algorithms so far we've just 
+talked about techniques to make data 
+intelligible to the computer data 
+pre-processing also includes techniques 
+used to improve the predictive ability 
+of your data you can use feature 
+engineering to manipulate or combine 
+features to try and create better 
+predictors for your data feature 
+engineering is as much of an art as it 
+is a science and is greatly helped with 
+the knowledge of the business domain 
+you're working in one important step in 
+the data pre-processing pipeline is the 
+trained test split the trained test 
+split refers to this step where we split 
+our data into at least two sections one 
+called the training data set and one 
+called the testing data set a machine 
+learning algorithm will oftentimes 
+perform thousands if not millions of 
+operations on a data set to try and 
+learn more about it once it has learned 
+what it can about a data set it will 
+then spit out some predicted value we 
+need some way to tell if the values 
+output from the algorithm are actually 
+accurate we could of course compare the 
+predicted values to the actual values 
+from the same data set but all this 
+tells us is how accurately the algorithm 
+performs with this data set this is 
+where we stick our algorithm out on the 
+test data set a data set it's never seen 
+before this helps us determine the 
+actual predictive power of our algorithm 
+after we've prepared our data we get to 
+the modeling step which is what data 
+science is most well known for this is a 
+step where we actually build our machine 
+learning model and is generally 
+considered the most fun part of the data 
+science process when creating our 
+algorithm we'll train it meaning we'll 
+show it our training data and have the 
+algorithm iterate over it hopefully 
+learning something new at every 
+iteration the process of actually 
+looking for patterns in the data is 
+called fitting as in we fit the 
+algorithm to our data you might have 
+heard that machine learning algorithms 
+are quite complicated and require a lot 
+of computational power to execute this 
+is because of both the massive amount of 
+data that is often used to train these 
+models and the complexity of the 
+algorithms used to train them graphics 
+processing units or gpus were originally 
+created to perform large numbers of 
+complicated mathematical computations 
+one after another to help compute 
+graphics turns out they're very good for 
+training machine learning algorithms as 
+well as machine learning became more 
+integral to the operations and products 
+of big tech companies they built more 
+and more specialized hardware to train 
+more complicated algorithms tpus are an 
+invention of google and stand for tensor 
+processing unit tpus are even better at 
+performing mathematical operations for 
+certain types of ml algorithms than gpus 
+after you train an algorithm you might 
+find that it isn't as accurate as you'd 
+hoped this is where hyper parameter 
+tuning can come in handy hyper 
+parameters are the parameters or 
+settings that control the way an 
+algorithm is trained it's one way that 
+you can improve the performance of a 
+model let's say you don't have access to 
+the complicated hardware sometimes 
+required to train certain algorithms 
+this is where techniques like 
+dimensionality reduction can be useful 
+these algorithms attempt to find dense 
+patterns in your data that can be 
+grouped together and remove features or 
+combine features such that you reduce 
+the overall number of features you're 
+working with thereby reducing the 
+dimensions to your data all that sounded 
+pretty cool right well you can see why 
+modeling is the most popular step of 
+crisp dm after building our model we 
+need to evaluate it against the business 
+requirements originally laid out if we 
+find that the project has not solved our 
+business requirements then it's time to 
+go back to step one to see where we need 
+to adjust our business goals if we don't 
+have the data required to solve a 
+project assuming we pass a valuation we 
+will eventually want to deploy our model 
+which means it will be released into the 
+real world to solve whatever issue it 
+was created to solve coming back to the 
+path of machine learning after that long 
+tangent assuming we're in the modeling 
+section of crisp dm it's now time for us 
+to determine which machine learning 
+model we're going to use first we need 
+to determine if the problem we're going 
+to solve is a supervised unsupervised or 
+reinforcement problem a supervised 
+problem is one where we train a machine 
+learning model on a target variable of 
+some kind with data that we might have a 
+target variable is the variable that 
+we'd like to predict it can be something 
+like whether a photo is a hot dog or not 
+a hot dog or trying to predict incomes 
+in a population based on some data we 
+have of said population if you've 
+decided that your problem is a 
+supervised problem you'll then need to 
+decide if you want to solve it using 
+regression or classification you use 
+regression if your target variable is 
+numeric and you use classification 
+otherwise for example if you want to 
+predict incomes based on a series of 
+factors incomes are numeric so you'd be 
+solving a supervised regression problem 
+this a support vector machine algorithm 
+is one of the most common algorithms in 
+machine learning and works by trying to 
+find the biggest gap between various 
+groups inside a data set if your target 
+variable is not numeric then you have a 
+supervised classification problem when 
+working with classification problems you 
+have a couple of ways you can classify 
+object binary classification is just 
+classifying if based on some data an 
+object is one thing or another such as a 
+hot dog or not a hot dog multi-label 
+classification is another type of 
+classification where we can classify 
+each instance with multiple labels this 
+could be something like predicting the 
+make and model of a car bought by 
+individuals based on a bunch of 
+information we know about their other 
+buying habits the confusingly named 
+logistic regression is just one such 
+type of classification algorithm 
+unsupervised algorithms won't try and 
+match your data to a target variable 
+instead they'll try and find their own 
+patterns in the data this is useful if 
+you want to cluster your data clustering 
+is an unsupervised technique where your 
+algorithm will try to cluster 
+observations into groups based on how 
+related instances are to one another 
+let's say we have a table of people's 
+transaction data for a certain store a 
+clustering algorithm can create groups 
+of customers with similar purchasing 
+habits which you can then label with 
+archetypes to better target certain 
+particularly desirable customers 
+although now commonly used to refer to 
+the excellent podcast ken's nearest 
+neighbors k n refers to an algorithm 
+called k nearest neighbors basically you 
+define what k should be and the 
+algorithm will create centers in your 
+data and group the nearest k values to 
+each other although easiest to 
+illustrate with two-dimensional data 
+this technique works with data of all 
+dimensions reinforcement learning is a 
+very special type of machine learning 
+algorithm that tries to teach by setting 
+some desired outcome and rewarding the 
+algorithm when that outcome is reached 
+and punishing it if the outcome isn't 
+read for a particularly interesting 
+example check out this video by two 
+minute papers where a reinforcement 
+learning algorithm is used to train bots 
+to play hide and seek as they let the 
+algorithm run for longer the results 
+start to get very interesting a really 
+versatile yet common algorithm that 
+tries to create a tree of decision nodes 
+to classify values into different 
+categories it uses a metric such as 
+information gain to determine how to 
+split each decision node into two 
+different routes decision trees are 
+great because they're relatively simple 
+to explain quick to train and yet fairly 
+accurate there are many different 
+categories of machine learning 
+algorithms the most effective algorithms 
+these days are ones that fall into the 
+ensemble category ensemble methods will 
+try and combine the predictions of 
+multiple algorithms to create one super 
+algorithm one of the simplest but most 
+popular ensemble algorithms is the 
+random forest it works by training 
+multiple decision trees to try and 
+predict an outcome they have similar 
+benefits to decision trees in that 
+they're easy to implement pretty good 
+predictors and easy to explain a neural 
+network is a group of machine learning 
+models that work really well with tasks 
+such as image recognition and speech 
+recognition they work in a manner that 
+is reminiscent of the human brain using 
+individual nodes each which represents a 
+variable each node can be represented 
+with a linear equation that takes the 
+input and creates a new number which 
+then pass through the channels to the 
+next layer at this layer we can then do 
+the same thing and if the number of each 
+node outputs passes a predetermined 
+threshold then the node is considered 
+activated and passes its value to the 
+next layer we do this until we get to 
+the end where the network outputs 
+probabilities of an object being of each 
+class for example after checking if the 
+answer is correct the network will back 
+propagate through the network correcting 
+weights and biases of nodes until it 
+eventually gets to the right category 
+although that might sound very 
+complicated the actual implementation of 
+neural networks is fairly simple with 
+most people using pi torch or tensorflow 
+libraries created by meta and google 
+respectively one major problem that 
+neural networks have is that they can 
+take a long time to train oftentimes 
+they need specialized hardware and need 
+a lot of data to be trained accurately 
+boosting algorithms are based off the 
+idea that weak ml algorithms ones which 
+don't do a great job of predicting can 
+be strategically combined in order to 
+make a strong predictor basically if you 
+train enough machine learning algorithms 
+and find out what each one is good at 
+predicting combine everything together 
+you'll come up with a single strong 
+algorithm like i mentioned above a lot 
+more complicated algorithms like neural 
+networks require a lot of computing 
+power to train well instead of getting 
+more and more powerful laptops that 
+might only be useful for a few years and 
+might not even be used at full power all 
+the time solutions like databricks exist 
+to help you train your machine learning 
+algorithms in the cloud using their gpus 
+and big data frameworks you can work 
+with massive amounts of data without 
+having to buy any expensive hardware for 
+yourself just because you've trained 
+your model doesn't mean you're done as 
+new data is introduced to a system or 
+conditions change machine learning 
+models experience something called model 
+drift which causes the model to become 
+worse at predicting things over time one 
+really common instance of this is with 
+models that are used to predict the 
+stock market as conditions change the 
+old algorithms that used to work well 
+tend not to work as well now we get to 
+the forgotten step child of data science 
+statistics when you're working with data 
+you'll often want to use numbers to 
+somehow describe it descriptive 
+statistics are a great way to do this 
+and involve taking measures of central 
+tendency like mean median mode of a data 
+sets columns along with standard 
+deviation value counts etc basically any 
+way you can use numbers to describe the 
+data inferential statistics are when 
+statistics start to get really 
+interesting as this is where you use 
+stats to try and determine information 
+about the data that isn't explicitly 
+said things like forecasting future 
+results and generalizing a population 
+based on a sample fall into this bucket 
+bayesian statistics or bayesian thinking 
+is a field of statistics that concerns 
+itself with the likelihood of an event 
+happening given other events have 
+happened a great example would be trying 
+to figure out the likelihood that 
+someone you're going to go on a first 
+date with like star wars your estimate 
+is that about 60 of the population like 
+star wars while on this date it comes 
+out that your date went to go see the 
+last star wars movie you know that 
+basically all fans of star wars saw the 
+movie but not everyone who saw the movie 
+was a star wars fan and you can update 
+your hypothesis to say it's 80 likely 
+that your date is a star wars fan a data 
+distribution describes how data usually 
+numerically is distributed the most 
+common type of distribution is the 
+gaussian or normal distribution 
+which is a precondition for running a 
+lot of statistical tests one really 
+important statistical concept that can 
+affect the accuracy of your machine 
+learning algorithms is selection bias 
+this is the type of bias introduced when 
+individuals or instances selected for 
+groups are not truly randomized which 
+can lead to poor accuracy in your 
+algorithms an example would be if your 
+trained test split was done poorly such 
+that your training group is not 
+generally representative of your entire 
+sample 
+bootstrapping is one way to fight this 
+type of bias and also try and make your 
+algorithms work when you don't have that 
+much data to work with bootstrapping is 
+a procedure when you select a random 
+sample replace all the items in the 
+sample and then sample again hypothesis 
+testing in statistics is a way for you 
+to test the results of a survey or 
+experiment to see if you have meaningful 
+results you're basically testing whether 
+your results are valid by figuring out 
+the odds that your results have happened 
+by chance if your results may have 
+happened by chance the experiment won't 
+be repeatable so it has little use this 
+is very useful for data scientists who 
+want to generalize over a population 
+whether something that they've done is 
+effective or not if you want to break 
+into the world of data science becoming 
+a data analyst is a great way to get 
+started it was my first job and taught 
+me a lot of the skills that eventually 
+got me into data science in a more 
+delicate manner than diving straight 
+into hardcore data science a data 
+analyst will generally work with 
+business leaders to understand their 
+needs in a process called requirements 
+gathering check the data is available 
+analyze and present it to said business 
+leaders at the end of the day a data 
+analyst is involved in the practice of 
+data storytelling what's the point of 
+analyzing data it is to drive some form 
+of change in an organization or group of 
+people while you can inundate people 
+with numbers facts and figures you're 
+much more likely to convert people to 
+your method of thinking if you can tell 
+them a story that communicates the 
+message using data there are seven 
+different data stories that you can tell 
+narrate change over time an example of 
+this could be a time lapse of the amazon 
+being deforested over time start big and 
+drill down this is a great way to give 
+context to the smaller data points you 
+want to communicate if you wanted to 
+communicate how infrastructurally 
+underdeveloped north korea is you could 
+show a map of all of asia and how well 
+lit it is at night then zoom into the 
+one part that isn't north korea start 
+small and zoom out this is the method a 
+lot of news outlets will use when 
+discussing an issue they'll find an 
+individual affected by the issue to 
+anchor the audience with a sympathetic 
+person then zoom out to explain how the 
+problem affects a much larger population 
+highlight contrasts this is a great way 
+of showing how problem areas tend to 
+cluster around one another if we looked 
+at an index of free nations you'll 
+notice that a lot of nations that are 
+not free tend to cluster around certain 
+regions of the world compared to other 
+free nations explore the intersection 
+this can be how different phenomena 
+develop in response to stimuli in their 
+environment a line graph of north korean 
+gdp per capita vs south korean gdp per 
+capita shows an intersection in the 
+1950s followed by a huge acceleration of 
+south korea to the stratosphere while 
+north korea eventually suffers dissect 
+the factors oftentimes we want to know 
+what are the constituent parts of an 
+observed phenomena let's take global gdp 
+figures by itself there is not much of a 
+story here but as we dissect them by 
+country you start to see the rise of 
+certain countries during different times 
+in history profile the outliers 
+sometimes the outliers are what we're 
+truly interested in if you're working in 
+fraud detection normal transactions are 
+not something you're interested in as 
+much as the outliers are business 
+intelligence is concerned with using 
+generally tabular data and transforming 
+and visualizing it in order to explain 
+business performance it's less about 
+analyzing the data like a data analyst 
+does and more about communicating what 
+the data says in formats that help 
+leaders understand how the business is 
+performing business intelligence 
+professionals use a class of tools 
+called bi tools these are tools with 
+graphical user interfaces that connect 
+them to many different sources of data 
+and make visualizing them easy if you're 
+trying to create a visualization in 
+python you'll use matplotlib or cborn or 
+ggplot2 if you use r there are many 
+different ways to visualize data one of 
+the most common being a scatter scatter 
+plots are commonly used to visualize a 
+relationship between two or more 
+variables you can even create a 
+four-dimensional scatter plot by giving 
+each point in a three-dimensional 
+scatter plot a color bar charts are a 
+staple of data visualization and are a 
+great default chart to use because 
+they're very familiar to most people and 
+easy for people to read most people 
+display their charts in a vertical bar 
+chart i would actually suggest going for 
+the horizontal bar chart as most people 
+read right to left top to bottom the 
+horizontal bar chart preserves the 
+natural order of reading and makes it 
+easier to compare classes to one another 
+pie charts are a chart type that should 
+almost never be used if you have more 
+than three very differently sized groups 
+then it'll become very difficult for 
+your audience to differentiate the group 
+pie chart slices are differentiated 
+based on the volume of each slice 
+volumes are very different for the human 
+eye to compare across different 
+categories this is in opposition to 
+lengths which are what we need to 
+compare the different categories in a 
+bar chart i would actually suggest that 
+you switch pie charts to horizontal bar 
+charts that way your data is 
+communicated in a more consistent and 
+easy to read manner line graphs are an 
+excellent way to show change over time 
+just be careful as the fact that the 
+lines have no breaks in them implies 
+that the data is continuous as in 
+something is happening between the 
+points on the chart time series data is 
+a very common data type used to graph 
+line graph it is any data with a date 
+and time in one column and generally a 
+numeric value in another column tree 
+maps are a fun graph type that can 
+highlight the biggest categories in a 
+complex system they're often used to map 
+out the sectors of a nation's economy 
+for example a histogram is a special bar 
+chart that groups the values in a single 
+group in buckets that are represented by 
+columns it's used to illustrate how data 
+is distributed the chloroplath map is a 
+great way to illustrate the differences 
+in geographic areas it's a very powerful 
+map type and used a lot to illustrate 
+the difference in populations 
+radar charts are a great way of 
+comparing multiple quantitative 
+variables against one another and really 
+highlighting the outliers that might be 
+there and finally 101 ultra wide 
+monitors a great way to annoy people on 
+zoom calls whenever you share your 
+screen by making your text way too small 
+to read but the perfect size for you you 
+can't be taken seriously as a data 
+professional if you don't have one of 
+these 
+ - Generated with https://kome.ai
