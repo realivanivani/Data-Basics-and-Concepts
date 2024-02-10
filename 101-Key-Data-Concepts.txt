@@ -243,8 +243,7 @@ cloud cloud services are a group of
 services managed by a large company who 
 takes care of everything from buying and 
 powering the servers to managing 
-physical security 
-to adding and subtracting server power 
+physical security to adding and subtracting server power 
 based on how much traffic you have when 
 using cloud outside of china the big 
 players are amazon web services better 
@@ -434,8 +433,7 @@ kick innovation on certain projects into
 high gear and has been a very core part 
 of tech culture since the turn of the 
 century even microsoft went from openly 
-bashing linux 
-to being one of the biggest contributors 
+bashing linux to being one of the biggest contributors 
 to open source projects over the last 
 two decades pivoting from data engineers 
 another profession in the world of data 
@@ -444,8 +442,7 @@ often focus on the complicated problems
 a company might have that can be solved 
 with deep and computationally or 
 mathematically intensive analysis of 
-data 
-oftentimes a data scientist will work on 
+data oftentimes a data scientist will work on 
 a very complicated problem where data is 
 not easily available for over the course 
 of multiple weeks or months and use 
@@ -1151,4 +1148,3 @@ to read but the perfect size for you you
 can't be taken seriously as a data 
 professional if you don't have one of 
 these 
- - Generated with https://kome.ai
